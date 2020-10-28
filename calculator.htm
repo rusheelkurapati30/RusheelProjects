@@ -1,0 +1,35 @@
+<!-- Calculator program using HTML-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY CALCULATOR</title>
+</head>
+<body>
+	<form Name="calculator">
+		<input type = text Name = "display">
+		<br><br>
+		<input type = button value = "7" OnClick = "calculator.display.value+='7'"> 
+		<input type = button value = "8" OnClick = "calculator.display.value+='8'"> 
+		<input type = button value = "9" OnClick = "calculator.display.value+='9'"> 
+		<input type = button value = "x" OnClick = "calculator.display.value+='*'">
+		<br>
+		<input type = button value = "4" OnClick = "calculator.display.value+='4'">
+		<input type = button value = "5" OnClick = "calculator.display.value+='5'">
+		<input type = button value = "6" OnClick = "calculator.display.value+='6'">
+		<input type = button value = "-" OnClick = "calculator.display.value+='-'"> 
+		<br>
+		<input type = button value = "1" OnClick = "calculator.display.value+='1'">
+		<input type = button value = "2" OnClick = "calculator.display.value+='2'">
+		<input type = button value = "3" OnClick = "calculator.display.value+='3'">
+		<input type = button value = "+" OnClick = "calculator.display.value+='+'">
+		<br>
+		<input type = button value = "C" OnClick = "calculator.display.value=''">
+		<input type = button value = "0" OnClick = "calculator.display.value+='0'">
+		<input type = button value = "=" OnClick = "calculator.display.value=eval(calculator.display.value)">
+		<input type = button value = "/" OnClick = "calculator.display.value+='/'">
+	</form>
+
+</body>
+</html>
+
+
