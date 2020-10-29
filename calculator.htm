@@ -3,12 +3,138 @@
 <html>
 <head>
 <title>MY CALCULATOR</title>
+<link rel = "stylesheet" type ="text/css" href = "calculator.css">
+<script type ="text/javascript" src = "calculator.js"></script>
+</head>
+<body>
+	<form Name = "calculator">
+		<input type = text Name = "display">
+		<br><br>	
+		<button type = "button" onclick = "seven()">7</button>
+		<button type = "button" onclick = "eight()">8</button>
+		<button type = "button" onclick = "nine()">9</button>
+		<button type = "button" onclick = "multiplication()">x</button>
+		<br>
+		<button type = "button" onclick = "four()">4</button>
+		<button type = "button" onclick = "five()">5</button>
+		<button type = "button" onclick = "six()">6</button>
+		<button type = "button" onclick = "subtraction()">-</button>
+		<br>
+		<button type = "button" onclick = "one()">1</button>
+		<button type = "button" onclick = "two()">2</button>
+		<button type = "button" onclick = "three()">3</button>
+		<button type = "button" onclick = "addition()">+</button>
+		<br>
+		<button onclick = "calculator.display.value+=''">C</button>
+		<button type = "button" onclick = "zero()">0</button>
+		<button type = "button" onclick = "result()">=</button>
+		<button type = "button" onclick = "division()">/</button>
+
+	</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <style>
+	button
+	{
+		width:30px;
+		height:25px
+	}
+</style> -->
+
+
+
+
+
+<!-- <button type = "button" style="width:30px; height:25px" onclick = "calculator.display.value+='7'">7</button>
+		<button type = "button" style="width:30px; height:25px" onclick = "calculator.display.value+='8'">8</button>
+		<button type = "button" style="width:30px; height:25px" onclick = "calculator.display.value+='9'">9</button>
+		<button type = "button" style="width:30px; height:25px" onclick = "calculator.display.value+='*'">*</button>
+		<br>
+		<button type = "button" style="width:30px; height:25px" onclick = "calculator.display.value+='4'">4</button>
+		<button type = "button" style="width:30px; height:25px" onclick = "calculator.display.value+='5'">5</button>
+		<button type = "button" style="width:30px; height:25px" onclick = "calculator.display.value+='6'">6</button>
+		<button type = "button" style="width:30px; height:25px" onclick = "calculator.display.value+='-'">-</button>
+		<br>
+		<button type = "button" style="width:30px; height:25px" onclick = "calculator.display.value+='1'">1</button>
+		<button type = "button" style="width:30px; height:25px" onclick = "calculator.display.value+='2'">2</button>
+		<button type = "button" style="width:30px; height:25px"onclick = "calculator.display.value+='3'">3</button>
+		<button type = "button" style="width:30px; height:25px"onclick = "calculator.display.value+='+'">+</button>
+		<br>
+		<button style="width:30px; height:25px" onclick = "calculator.display.value+=''">C</button>
+		<button type = "button" style="width:30px; height:25px" onclick = "calculator.display.value+='0'">0</button>
+		<button type = "button" style="width:30px; height:25px"onclick = "calculator.display.value=eval(calculator.display.value)">=</button>
+		<button type = "button" style="width:30px; height:25px" onclick = "calculator.display.value+='/'">/</button> -->
+
+
+
+
+
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY CALCULATOR</title>
+<link rel="stylesheet" type="text/css" href="calculator.css">
+<script>
+	
+</script>
 </head>
 <body>
 	<form Name="calculator">
 		<input type = text Name = "display">
-		<br><br>
-		<input type = button value = "7" OnClick = "calculator.display.value+='7'"> 
+		<br><br>	
+		<button type = "button" onclick = "calculator.display.value+='7'">7</button>
+		<button type = "button" onclick = "calculator.display.value+='8'">8</button>
+		<button type = "button" onclick = "calculator.display.value+='9'">9</button>
+		<button type = "button" onclick = "calculator.display.value+='*'">x</button>
+		<br>
+		<button type = "button" onclick = "calculator.display.value+='4'">4</button>
+		<button type = "button" onclick = "calculator.display.value+='5'">5</button>
+		<button type = "button" onclick = "calculator.display.value+='6'">6</button>
+		<button type = "button" onclick = "calculator.display.value+='-'">-</button>
+		<br>
+		<button type = "button" onclick = "calculator.display.value+='1'">1</button>
+		<button type = "button" onclick = "calculator.display.value+='2'">2</button>
+		<button type = "button" onclick = "calculator.display.value+='3'">3</button>
+		<button type = "button" onclick = "calculator.display.value+='+'">+</button>
+		<br>
+		<button onclick = "calculator.display.value+=''">C</button>
+		<button type = "button" onclick = "calculator.display.value+='0'">0</button>
+		<button type = "button" onclick = "calculator.display.value=eval(calculator.display.value)">=</button>
+		<button type = "button" onclick = "calculator.display.value+='/'">/</button>
+
+	</form>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <input type = button value = "7" OnClick = "calculator.display.value+='7'"> 
 		<input type = button value = "8" OnClick = "calculator.display.value+='8'"> 
 		<input type = button value = "9" OnClick = "calculator.display.value+='9'"> 
 		<input type = button value = "x" OnClick = "calculator.display.value+='*'">
@@ -26,10 +152,4 @@
 		<input type = button value = "C" OnClick = "calculator.display.value=''">
 		<input type = button value = "0" OnClick = "calculator.display.value+='0'">
 		<input type = button value = "=" OnClick = "calculator.display.value=eval(calculator.display.value)">
-		<input type = button value = "/" OnClick = "calculator.display.value+='/'">
-	</form>
-
-</body>
-</html>
-
-
+		<input type = button value = "/" OnClick = "calculator.display.value+='/'"> -->
