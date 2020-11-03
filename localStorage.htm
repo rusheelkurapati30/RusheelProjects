@@ -1,0 +1,27 @@
+<!-- Login page using LOCAL STORAGE -->
+<DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function saveValues()
+		{
+			localStorage._user = document.getElementById("user").value;
+			localStorage._pw= document.getElementById("pw").value;
+		}
+		function loadValues()
+		{
+			document.getElementById("user").value = localStorage._user;
+			document.getElementById("pw").value = localStorage._pw;
+		}
+	</script>
+</head>
+<body>
+User Name: <input type="text" id="user">
+Password: <input type="text" id="pw"><br><br>
+<button onclick="saveValues()">Login</button>
+<button onclick="loadValues()">remember me</button>
+</body>
+</html>
+
+
