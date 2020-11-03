@@ -1,0 +1,25 @@
+<!-- Login page using SESSION STORAGE -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function saveValues()
+		{
+			sessionStorage._user = document.getElementById("user").value;
+			sessionStorage._pw= document.getElementById("pw").value;
+		}
+		function loadValues()
+		{
+			document.getElementById("user").value = sessionStorage._user;
+			document.getElementById("pw").value = sessionStorage._pw;
+		}
+	</script>
+</head>
+<body>
+User Name: <input type="text" id="user">
+Password: <input type="text" id="pw"><br><br>
+<button onclick="saveValues()">Login</button>
+<button onclick="loadValues()">remember me</button>
+</body>
+</html>
